@@ -14,7 +14,7 @@ buttons = InlineKeyboardMarkup(
     ]
 )
 
-@app.on_message(filters.command("start"))
+@app.on_message(filters.command("art"))
 async def start(_, message):
     join = await subscribe(_, message)
     if join == 1:
