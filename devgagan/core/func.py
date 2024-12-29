@@ -277,7 +277,7 @@ async def progress_callback(current, total, progress_message):
     f"│ **__Progress:__** {percent:.2f}%\n"
     f"│ **__Uploaded:__** {current_mb:.2f} MB / {total_mb:.2f} MB\n"
     f"╰──────────────────╯\n\n"
-    f"**__Powered by Team SPY__**"
+    f"**__Powered by Team Now__**"
         )
         
         last_update_time = current_time
@@ -299,8 +299,8 @@ async def prog_bar(current, total, ud_type, message, start):
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
         progress = "{0}{1}".format(
-            ''.join(["♦" for i in range(math.floor(percentage / 10))]),
-            ''.join(["◇" for i in range(10 - math.floor(percentage / 10))]))
+            ''.join(["🔯" for i in range(math.floor(percentage / 10))]),
+            ''.join(["✡️" for i in range(10 - math.floor(percentage / 10))]))
             
         tmp = progress + PROGRESS_BAR.format( 
             round(percentage, 2),
